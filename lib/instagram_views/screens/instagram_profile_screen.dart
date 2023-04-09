@@ -20,11 +20,14 @@ class InstagramProfileScreen extends StatelessWidget {
         centerTitle: true,
         actions: [IconButton(icon: Icon(Icons.settings ,color: Colors.black87,),onPressed: (){},)],
       ),
-      bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.home_filled),label:""),
-        BottomNavigationBarItem(icon: Icon(Icons.search_rounded),label: ""),
-        BottomNavigationBarItem(icon: Icon(Icons.camera_alt),label: ""),
-        //BottomNavigationBarItem(icon: Icon(Icons.favorite),label: ""),
+      bottomNavigationBar: BottomNavigationBar(
+          selectedItemColor:Colors.lightBlue,
+          unselectedItemColor: Colors.black,
+          items: [
+        BottomNavigationBarItem(icon: Icon(Icons.home_filled),label:"Home"),
+        BottomNavigationBarItem(icon: Icon(Icons.search_rounded),label: "Settings"),
+        BottomNavigationBarItem(icon: Icon(Icons.camera_alt),label: "Camera"),
+        BottomNavigationBarItem(icon: Icon(Icons.favorite),label: "Favourite"),
       ]),
       body:
       Column(
